@@ -54,7 +54,7 @@ int main(int argc, char *argv[argc+1])
 	/* Decompose shell into a set of elements; pipe these into
 	 * a .txt file for permanent storage */
 
-        destroyForm(f);
+    destroyForm(f);
 
-        return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
