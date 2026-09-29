@@ -83,19 +83,19 @@ void readParticles(FormInstance *f)
 
 	    while (i < n && scanf("%lf %lf %lf", &x, &y, &z) == 3)
 	    {
-		    f->system.positionX[i] = x;
-		    f->system.positionY[i] = y;
-		    f->system.positionZ[i] = z;
+		        f->system.positionX[i] = x;
+		        f->system.positionY[i] = y;
+		        f->system.positionZ[i] = z;
 
-		    hasData = true;
-		    i++;
+		        hasData = true;
+		        i++;
 	    }
 
 	    f->system.count = i;
 
 	    if (!hasData)
 	    {
-		    fprintf(stderr, "Warning: no particles read.\n");
-		    return;
+		        fprintf(stderr, "Warning: no particles read.\n");
+		        return;
 	    }
 }
