@@ -16,7 +16,7 @@ int main(int argc, char *argv[argc+1])
     
         double timeStep = 0.01;
 
-        unsigned long parsedNum = strtoul(argv[1], nullptr, 10);
+        unsigned long parsedNum = strtoul(argv[1], NULL, 10);
 
         if (parsedNum == 0 || parsedNum > UINT32_MAX)
         {
