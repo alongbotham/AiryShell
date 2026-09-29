@@ -9,28 +9,28 @@
 
 typedef struct ParticleSystem
 {
-	double *buffer;
-	double *positionX;
-	double *positionY;
-	double *positionZ;
-	double *velocityX; 
-	double *velocityY; 
-	double *velocityZ;
-	double *accelerationX; 
-	double *accelerationY; 
-	double *accelerationZ;
-	double *normalX; 
-	double *normalY; 
-	double *normalZ;
-	double *mass;
-	double *weight;
-	uint32_t count;   
-	uint32_t paddedCapacity;
+        double *buffer;
+	    double *positionX;
+	    double *positionY;
+	    double *positionZ;
+	    double *velocityX; 
+	    double *velocityY; 
+	    double *velocityZ;
+	    double *accelerationX; 
+	    double *accelerationY; 
+	    double *accelerationZ;
+	    double *normalX; 
+	    double *normalY; 
+	    double *normalZ;
+	    double *mass;
+	    double *weight;
+	    uint32_t count;   
+	    uint32_t paddedCapacity;
 } ParticleSystem;
 
 typedef struct FormInstance
 {
-	ParticleSystem system;
+        ParticleSystem system;
 } FormInstance;
 
 FormInstance* createForm(double r);
