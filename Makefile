@@ -15,27 +15,27 @@ SRCS = $(SRC_MAIN) $(SRC_FORM) $(SRC_PLOT) $(SRC_SHOCK)
 OBJS = $(SRC_MAIN:.c=.o) $(SRC_FORM:.c=.o) $(SRC_PLOT:.c=.o) $(SRC_SHOCK:.c=.o)
 
 $(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $(OBJS) $(LIBS)
+        $(CC) $(CFLAGS) -o $@ $(OBJS) $(LIBS)
 
 main.o: main.c form.h plot.h shock.h
-	$(CC) $(CFLAGS) -c main.c
+	    $(CC) $(CFLAGS) -c main.c
 
 form.o: form.c form.h
-	$(CC) $(CFLAGS) -c form.c
+	    $(CC) $(CFLAGS) -c form.c
 
 plot.o: plot.c plot.h
-	$(CC) $(CFLAGS) -c plot.c
+	    $(CC) $(CFLAGS) -c plot.c
 
 shock.o: shock.c shock.h
-	$(CC) $(CFLAGS) -c shock.c
+	    $(CC) $(CFLAGS) -c shock.c
 
 clean:
-	rm -f *.o $(TARGET)
+	    rm -f *.o $(TARGET)
 
 help:
-	@echo "Build targets:"
-	@echo "  make       - Build the form executable"
-	@echo "  make clean - Remove compiled files"
-	@echo "  make help  - Show this message"
+	    @echo "Build targets:"
+	    @echo "  make       - Build the form executable"
+	    @echo "  make clean - Remove compiled files"
+	    @echo "  make help  - Show this message"
 
 .PHONY: clean help
