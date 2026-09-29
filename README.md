@@ -7,6 +7,8 @@ material constraints. Developed for seismic-resilient structural design.
 
 This framework implements a solver in C that:
 - Decomposes 2-manifolds into tangent-developed beam segments
+- Subjects equilibrium shell to dynamical, horizontal forces
+- Visualizes stresses in stationary shell, and during simulation of shell subjected to shocks
 - Encodes directional stiffness via anisotropic Wendland C² kernels
 - Optimizes for minimal-energy configurations respecting material anisotropy
 
