@@ -1,2 +1,15 @@
 # AiryShell
-Conformal form-finding for compression-only shell structures. Maps 2-manifolds to a bounded planar domain and evolves an Airy stress function under concavity constraints, with FFT/multigrid-accelerated equilibrium solving—targeting an order-of-magnitude speedup over dynamic relaxation.
+
+Computational form-finding for pure-compression shells using anisotropic
+material constraints. Developed for seismic-resilient structural design.
+
+## Overview
+
+This framework implements a solver in C that:
+- Decomposes 2-manifolds into tangent-developed beam segments
+- Encodes directional stiffness via anisotropic Wendland C² kernels
+- Optimizes for minimal-energy configurations respecting material anisotropy
+
+## Quick Start
+
+--Will be completed after form.c, form.h, main.c, and plot module and interface are complete--
